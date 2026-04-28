@@ -1,19 +1,102 @@
-<!doctype html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Porfolio</title>
-	<link rel="stylesheet" href="./index.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-	<header class="main-header">
-		<h1 class="title">SOLIS</h1>
-		<P class="caption-title">EAU DE PARFUM</P>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Search...">
+        </div>
+    </header>
+    
+    <section id="home" class="section">
+        <h2>HOME</h2>
+        
+        
+        <div class="home-content">
+            <div class="name-and-pic">
+                <div class="logo">
+                  <img src="assest\dp.jpg" alt="SOLIS Logo">
+                </div>
+                
+            </div>
+            <div class="home-text">
+                <div>
+                    <div class="name">
+                        <h1 class="jolyos">Jolyos</h1>
+                        <h1 class="full-name">Julius Ryan A. Lopez</h1>
+                    </div>
+                </div>
+                    
+                <h4>Photographer</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis vestibulum erat. Ut velit nisl, eleifend sit amet porttitor vel, consectetur vitae metus.
+                </p>
+                <p class="quote">
+                    “Don't ever lose yourself”
+                </p>
+            </div>
+        </div>
+    </section>
 
+    <section id="about" class="section">
+        <h2>ABOUT</h2>
+        <p class="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis vestibulum erat. Ut velit nisl, eleifend sit amet porttitor vel, consectetur vitae metus. Nulla facilisi. Vestibulum et diam ut purus suscipit pretium a sit amet dolor. Maecenas vestibulum consectetur nulla, eu congue augue mollis vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam ultricies vehicula blandit. Integer lorem odio, imperdiet eget ultrices sed, accumsan vitae augue. Nunc vel consequat leo. Mauris nec sodales mi, eget tincidunt nulla. Vivamus quis ex vulputate, feugiat quam eu, viverra tortor.</p>
+        <div class="about-wrapper">
+            <div class="about-text">
+                <h4>Skills</h4>
+                <ul>
+                    <li>Fast Learner</li>
+                    <li>Critical Thinking</li>
+                    <li>Fast worker</li>
+                </ul>
+            </div>
+        </div>
+    </section>  
 
-	</header>
-	
+    <section id="gallery" class="section">
+        
+        <h2><a href="gallery.html" class="full-gallery">FULL GALLERY</a></h2>
+        <div class="preview-gallery">
+            <a href="gallery.html"> <img src="assest\pic1.jpg" alt="image">
+            </a>
+            
+        </div>
+        <a href="gallery.html"> <h3 class="photos">Photos</h3> 
+            </a>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>CONTACT</h2>
+        <div class="contact-container">
+            <div class="contact-left">
+                <p><strong>Contact No.:</strong><br>09123456789<br>09765483214</p>
+                <p><strong>Email:</strong><br>24-38045@g.batstate-u.edu.ph<br>juliusryanlopez13@gmail.com</p>
+            </div>
+            <div class="contact-right">
+                <p><strong>Socials:</strong></p>
+                <p>FACEBOOK: Jolyós Lopez<br>
+                   INSTAGRAM: garciajoshuaaee<br>
+                   TIKTOK: Jolyós Lopez</p>
+            </div>
+        </div>
+        <footer>
+            <p>© 2026 SOLIS. All content, images, and descriptions are the exclusive property of SOLIS.<br>
+            Unauthorized reproduction or distribution is strictly prohibited.</p>
+            <p>Terms of Service • Last Updated: March 20, 2026</p>
+        </footer>
+    </section>
 </body>
 </html>

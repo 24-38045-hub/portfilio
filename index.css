@@ -1,13 +1,203 @@
-* {
-  margin: 0;
-  padding: 0;
+@import url('[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Open+Sans:wght@400;500&display=swap)');
+
+:root {
+    --bg-main: #F5F5F5;
+    --accent: #cadecd;
+    --text: #1b1b1b;
+    --subtext: #444;
 }
-.main-header {
-  background-color: #97B3AE; /*BG Color*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    background-color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.name-and-pic {
   display: flex;
-  flex-direction: column;
+    
+}
+.name {
+  font-family: 'Playfair Display', serif;
+
+}
+
+.jolyos {
+  font-size: 50px;
+}
+.logo img {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+}
+
+nav a:hover {
+    border-bottom: 1px solid var(--text);
+}
+
+.search input {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+/* ---------- SECTIONS ---------- */
+.section {
+    padding: 60px 120px;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+}
+
+/* ---------- HOME ---------- */
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:  265px;
+    
+}
+
+
+.home-image img {
+    width: 350px;
+    border-radius: 8px;
+}
+
+.home-text {
+    max-width: 550px;
+}
+
+.home-text h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.home-text p {
+    margin-bottom: 10px;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+/* ---------- ABOUT ---------- */
+.about-description {
+  display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 0px;
+  
+}
+.about-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about-text {
+    width: 60%;
+}
+
+.about-text h3,
+.about-text h4 {
+    font-family: 'Playfair Display', serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.about-text ul {
+    margin-left: 20px;
+    list-style: disc;
+}
+
+/* ---------- GALLERY ---------- */
+.full-gallery {
+  text-decoration: none;
+  color: black;
+}
+.photos {
+  text-decoration: none;
+  color: black;
+}
+.preview-gallery  img {
+    
+    width: 17rem;
+    border-radius: 8px;
+}
+.works-gallery  img {
+    
+    width: 17rem;
+    border-radius: 8px;
+}
+
+.photos {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.preview-gallery {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.works-gallery {
+  /* display: flex; */
+  align-content: center;
+  justify-content: center;
+}
+/* ---------- CONTACT ---------- */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;  
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+/* ---------- MISC ---------- */
+html {
+    scroll-behavior: smooth;
 }
